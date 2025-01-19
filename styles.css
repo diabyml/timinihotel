@@ -317,6 +317,17 @@ small,
   transform: scale(0.95);
 }
 
+input {
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  width: 100%;
+}
+
+input:focus {
+  outline: 3px solid var(--color-primary);
+}
+
 /* toggle menu */
 .toggle-menu {
   --btn-radius: 0;
@@ -334,12 +345,6 @@ small,
 
 /* Carousel */
 .carousel {
-  /* max-width: 600px;
-  margin-left: auto;
-  margin-right: auto; */
-
-  /* display: flex; */
-  /* transition: transform 0.4s ease-in-out; */
 }
 
 .carousel-item {
@@ -354,6 +359,45 @@ small,
 .carousel .user {
   font-size: 0.875rem;
   color: #333;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 1rem;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+.footer nav a:hover {
+  text-decoration: underline;
+}
+
+.footer .form {
+  /* outline: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer .wrapper {
+  display: grid;
+  gap: calc(var(--spacer) * 2);
+}
+
+@media (min-width: 30rem) {
+  .footer .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 60rem) {
+  .footer .wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+  }
 }
 
 /* LAYOUT PRIMITIVES */
