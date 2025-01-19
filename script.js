@@ -25,7 +25,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 // Initial display
-showTestimonial(currentIndex);
+showCarouselItem(currentIndex);
 
 // NAVIGATION BTN TOGGLER
 document.querySelector(".toggle-menu").addEventListener("click", function () {
