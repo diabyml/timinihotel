@@ -224,6 +224,11 @@ small,
   background-image: url(assets/images/bg-rooms.png);
 }
 
+.bg-contact {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
 @media (min-width: 48rem) {
   [class*="bg-page"] {
     min-height: 70vh;

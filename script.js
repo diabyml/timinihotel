@@ -4,6 +4,12 @@ const carouselItems = document.querySelectorAll(".carousel-item");
 
 let currentIndex = 0;
 
+// NAVIGATION BTN TOGGLER
+document.querySelector(".toggle-menu").addEventListener("click", function () {
+  console.log("clicked");
+  document.querySelector(".primary-nav").classList.toggle("active");
+});
+
 function showCarouselItem(index) {
   carouselItems.forEach((item, i) => {
     item.classList.toggle("active", i === index);
@@ -26,8 +32,3 @@ nextBtn.addEventListener("click", () => {
 
 // Initial display
 showCarouselItem(currentIndex);
-
-// NAVIGATION BTN TOGGLER
-document.querySelector(".toggle-menu").addEventListener("click", function () {
-  document.querySelector(".primary-nav").classList.toggle("active");
-});
